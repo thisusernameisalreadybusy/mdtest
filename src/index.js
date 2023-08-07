@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerRow = document.getElementById("headerRow");
     const dataRows = document.getElementById("dataRows");
 
-
     // Функция для отображения таблицы
     const displayTable = () => {
         // Очистка таблицы перед обновлением
