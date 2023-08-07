@@ -94,21 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const headerRow = document.getElementById("headerRow");
-    const dataRows = document.getElementById("dataRows");
-
-    const report = {
-        // ... (остальной код остается неизменным)
-    };
-
-    // Функция для отображения таблицы
-    const displayTable = () => {
-        // ... (остальной код остается неизменным)
-    };
-
-    // Первоначальное отображение таблицы
-    displayTable();
-
     // Добавляем обработчик для кнопки
     const showPopupButton = document.getElementById("showPopupButton");
     showPopupButton.addEventListener("click", () => {
@@ -118,62 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Функция для открытия всплывающего окна
     const openPopup = () => {
         const popupContent = `
-      <div class="popup">
-        <h2>Popup Window</h2>
-        <p>This is a popup window content.</p>
-        <button id="closePopupButton">Close</button>
-      </div>
-    `;
-        const popupOverlay = document.createElement("div");
-        popupOverlay.className = "popup-overlay";
-        popupOverlay.innerHTML = popupContent;
-
-        document.body.appendChild(popupOverlay);
-
-        const closePopupButton = document.getElementById("closePopupButton");
-        closePopupButton.addEventListener("click", () => {
-            closePopup();
-        });
-    };
-
-    // Функция для закрытия всплывающего окна
-    const closePopup = () => {
-        const popupOverlay = document.querySelector(".popup-overlay");
-        popupOverlay.remove();
-    };
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const headerRow = document.getElementById("headerRow");
-    const dataRows = document.getElementById("dataRows");
-
-    const report = {
-        // ... (остальной код остается неизменным)
-    };
-
-    // Функция для отображения таблицы
-    const displayTable = () => {
-        // ... (остальной код остается неизменным)
-    };
-
-    // Первоначальное отображение таблицы
-    displayTable();
-
-    // Добавляем обработчик для кнопки
-    const showPopupButton = document.getElementById("showPopupButton");
-    showPopupButton.addEventListener("click", () => {
-        openPopup();
-    });
-
-    // Функция для открытия всплывающего окна
-    const openPopup = () => {
-        const popupContent = `
-		 <div class="popup">
-			<h2>Popup Window</h2>
-			<p>This is a popup window content.</p>
-			<button id="closePopupButton">Close</button>
-		 </div>
-	  `;
+<div class="popup">
+<h2>Popup Window</h2>
+<p>This is a popup window content.</p>
+<button id="closePopupButton">Close</button>
+</div>
+`;
         const popupOverlay = document.createElement("div");
         popupOverlay.className = "popup-overlay";
         popupOverlay.innerHTML = popupContent;
