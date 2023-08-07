@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const headerRow = document.getElementById("headerRow");
 	const dataRows = document.getElementById("dataRows");
- 
+
 	const report = {
 	  "header": [
 		 {"id": "project_name", "type": "string", "caption": "Project name"},
@@ -18,20 +18,20 @@ document.addEventListener("DOMContentLoaded", () => {
 		 // ... ... ...
 	  ]
 	};
- 
+
 	// Функция для отображения таблицы
 	const displayTable = () => {
 	  // Очистка таблицы перед обновлением
 	  headerRow.innerHTML = "";
 	  dataRows.innerHTML = "";
- 
+
 	  // Генерация заголовка таблицы
 	  report.header.forEach((column) => {
 		 const th = document.createElement("th");
 		 th.textContent = column.caption;
 		 headerRow.appendChild(th);
 	  });
- 
+
 	  // Генерация строк данных
 	  report.data.forEach((rowData) => {
 		 const dataRow = document.createElement("tr");
@@ -47,11 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		 dataRows.appendChild(dataRow);
 	  });
 	};
- 
+
 	// Первоначальное отображение таблицы
 	displayTable();
  });
- document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener("DOMContentLoaded", () => {
   const headerRow = document.getElementById("headerRow");
   const dataRows = document.getElementById("dataRows");
 
@@ -104,25 +105,25 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
 	const headerRow = document.getElementById("headerRow");
 	const dataRows = document.getElementById("dataRows");
- 
+
 	const report = {
 	  // ... (остальной код остается неизменным)
 	};
- 
+
 	// Функция для отображения таблицы
 	const displayTable = () => {
 	  // ... (остальной код остается неизменным)
 	};
- 
+
 	// Первоначальное отображение таблицы
 	displayTable();
- 
+
 	// Добавляем обработчик для кнопки
 	const showPopupButton = document.getElementById("showPopupButton");
 	showPopupButton.addEventListener("click", () => {
 	  openPopup();
 	});
- 
+
 	// Функция для открытия всплывающего окна
 	const openPopup = () => {
 	  const popupContent = `
@@ -135,19 +136,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	  const popupOverlay = document.createElement("div");
 	  popupOverlay.className = "popup-overlay";
 	  popupOverlay.innerHTML = popupContent;
- 
+
 	  document.body.appendChild(popupOverlay);
- 
+
 	  const closePopupButton = document.getElementById("closePopupButton");
 	  closePopupButton.addEventListener("click", () => {
 		 closePopup();
 	  });
 	};
- 
+
 	// Функция для закрытия всплывающего окна
 	const closePopup = () => {
 	  const popupOverlay = document.querySelector(".popup-overlay");
 	  popupOverlay.remove();
 	};
- });
- 
+});
