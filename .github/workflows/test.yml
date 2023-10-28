@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install
       - run: mkdir _site/
-      - run: mv style.css _site/
+      - run: mv styles.css _site/
       - run: mv script.js _site/
       - run: mv data.js _site/
       - run: mv index.html _site/
