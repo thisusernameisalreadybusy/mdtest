@@ -7,7 +7,7 @@ jobs:
   bash:
     runs-on: ubuntu-latest
     steps:
-      - run:
+      - run: |
           mkdir --parents --verbose \
           _site/a\
           _site/b
