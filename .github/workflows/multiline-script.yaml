@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run:
-          mkdir --parents --versboe \
+          mkdir --parents --verbose \
           _site/a\
           _site/b
