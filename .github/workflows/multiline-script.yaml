@@ -7,6 +7,7 @@ jobs:
   bash:
     runs-on: ubuntu-latest
     steps:
-      - run: mkdir --parents --versboe \
-        _site/a\
-        _site/b
+      - run:
+          mkdir --parents --versboe \
+          _site/a\
+          _site/b
