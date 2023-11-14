@@ -1,7 +1,7 @@
 name: Workflow
 run-name: ${{ github.actor }} ran this workflow
 
-on: workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   bash:
