@@ -1,0 +1,15 @@
+name: Upload an artifact
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - run: mkdir .build/
+      - run: echo int main() { return 0; } > .build/code.cpp
+      - uses: actions/upload-artifact@v3
+        with:
+          name: .build
+          path: .build/
