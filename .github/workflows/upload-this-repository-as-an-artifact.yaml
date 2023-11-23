@@ -1,0 +1,13 @@
+name: Upload this repository as an artifact
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v3
+        with:
+          path: .
+          retention-days: 1
