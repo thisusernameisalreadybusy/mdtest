@@ -12,6 +12,8 @@ on:
 
 jobs:
   hello:
-    - runs-on: ${{ inputs.os }}
-    - uses: actions/checkout@v4
-    - run: echo I am running on ${{ inputs.os }}
+    runs-on: ${{ inputs.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo I am running on ${{ inputs.os }}
