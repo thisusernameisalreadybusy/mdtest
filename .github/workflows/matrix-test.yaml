@@ -6,10 +6,10 @@ on:
 
 jobs:
   build-all:
-    runs-on: matrix.os
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
+    runs-on: matrix.os
     steps:
       - uses: actions/checkout@v4
       - run: echo I am running on ${{ matrix.os }}.
