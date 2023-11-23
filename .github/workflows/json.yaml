@@ -9,7 +9,8 @@ jobs:
   job:
     strategy:
       matrix:
-        value: ${{ fromJSON(inputs.json) }}
+        array: ${{ fromJSON(inputs.json) }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo matrix.value
+      - run: echo ${{ matrix.array.name }}
+      - run: echo ${{ matrix.array }}
