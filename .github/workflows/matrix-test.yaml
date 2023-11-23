@@ -1,0 +1,15 @@
+name: Matrix Test
+run-name: ${{ github.actor }} ran this workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-all:
+    runs-on: matrix.os
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo I am running on ${{ matrix.os }}.
