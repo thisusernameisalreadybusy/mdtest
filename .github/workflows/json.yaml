@@ -7,6 +7,9 @@ on:
         type: string
 jobs:
   job:
+    strategy:
+      matrix:
+        value: ${{ fromJSON(inputs.json) }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ fromJSON(inputs.json) }}
+      - run: echo matrix.value
