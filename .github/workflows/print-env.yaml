@@ -1,0 +1,11 @@
+name: Print the env context
+on:
+  workflow_dispatch:
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ env }}
+      - run: echo ${{ env.ref_name }}
+      - run: echo ${{ github.ref_name }}
