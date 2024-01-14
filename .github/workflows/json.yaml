@@ -14,3 +14,4 @@ jobs:
     steps:
       - run: echo ${{ matrix.array.name }}
       - run: echo ${{ matrix.array }}
+      - run: echo ${{ join(inputs.json.*.name, '\n') }}
