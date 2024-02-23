@@ -9,7 +9,6 @@ jobs:
       - uses: actions/checkout@v4
       - run: cmake --help
       - run: git clone https://github.com/keith2018/SoftGLRender.git
-      - run: cd SoftGLRender
-      - run: mkdir Xcode; cd Xcode
-      - run: cmake -G Xcode ..
+      - run: mkdir ./SoftGLRender/Xcode
+      - run: cd ./SoftGLRender/Xcode; cmake -G Xcode ..
       - run: ls -la
