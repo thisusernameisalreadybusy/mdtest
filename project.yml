@@ -9,4 +9,5 @@ targets:
         version: 1.0
     sources: [App.swift]
     settings:
+      DEVELOPMENT_TEAM: B3G57IU33I
       PRODUCT_BUNDLE_IDENTIFIER: com.example.app
