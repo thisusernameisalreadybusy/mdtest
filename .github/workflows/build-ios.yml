@@ -9,7 +9,5 @@ jobs:
       - uses: actions/checkout@v4
       - run: brew install xcodegen
       - run: xcodegen generate
-      - run: ls -la grand-theft-auto.xcodeproj
-      - uses: actions/upload-artifact@v4
-        with:
-          path: .
+      - run: xcodebuild -project grand-theft-auto.xcodeproj
+      - run: ls -l
