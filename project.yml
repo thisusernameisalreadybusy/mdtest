@@ -7,3 +7,4 @@ targets:
       path: Info.plist
       proprties:
         version: 1.0
+    sources: [App.swift]
