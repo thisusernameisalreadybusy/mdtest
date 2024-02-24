@@ -6,4 +6,5 @@ jobs:
   brew:
     runs-on: macos-latest
     steps:
-      - run: brew --version
+      - run: brew tap tuist/tuist; brew install tuist
+      - run: tuist init --platform ios --template swiftui
