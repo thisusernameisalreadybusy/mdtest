@@ -1,0 +1,9 @@
+name: grand-theft-auto
+targets:
+  grand-theft-auto:
+    platform: iOS
+    type: application
+    info:
+      path: Info.plist
+      proprties:
+        version: 1.0
