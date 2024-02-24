@@ -12,6 +12,7 @@ jobs:
         with:
           path: ./*.xcodeproj
   build:
+    needs: cmake
     runs-on: macos-latest
     steps:
       - uses: actions/download-artifact@v4
