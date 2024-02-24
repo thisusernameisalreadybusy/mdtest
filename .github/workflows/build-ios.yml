@@ -10,3 +10,6 @@ jobs:
       - run: brew install xcodegen
       - run: xcodegen generate
       - run: ls -la grand-theft-auto.xcodeproj
+      - run: git add .;
+      - run: git commit -m "create xcode files"
+      - run: git push -f
