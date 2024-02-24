@@ -1,0 +1,9 @@
+name: brew
+on:
+  workflow_dispatch:
+
+jobs:
+  brew:
+    runs-on: macos-latest
+    steps:
+      - run: brew --version
