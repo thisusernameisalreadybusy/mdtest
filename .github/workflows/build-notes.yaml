@@ -1,0 +1,18 @@
+name: Build an iOS app
+on:
+  workflow_dispatch:
+
+jobs:
+  cmake:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -GXcode -S . -B build -DCMAKE_SYSTEM_NAME=iOS
+      - uses: actions/upload-artifact@v4
+        with:
+          path: ./*.xcodeproj
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/download-artifact@v4
+      - run: xcodebuild
