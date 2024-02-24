@@ -7,11 +7,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cmake --help
-      - run: git clone https://github.com/keith2018/SoftGLRender.git
-      - run: mkdir ./SoftGLRender/Xcode
-      - run: cd ./SoftGLRender/Xcode; cmake -G Xcode ..
-      - run: ls -la
-      - uses: actions/upload-artifact@v4
-        with:
-          path: ./SoftGLRender/Xcode/*
+      - run: xcodebuild -showsdks
