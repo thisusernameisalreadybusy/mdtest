@@ -7,8 +7,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - run: git clone https://github.com/leetal/ios-cmake.git
-      - run: cmake -GXcode -S . -B build -DCMAKE_SYSTEM_NAME=iOS -DCMAKE_TOOLCHAIN_FILE=ios-cmake/ios.toolchain.cmake -DPLATFORM=OS64
+      - run: swift --version
+      - run: which swiftc
+      - run: cmake -GXcode -S . -B build -DCMAKE_SYSTEM_NAME=iOS
       - uses: actions/upload-artifact@v4
         with:
           path: ./*.xcodeproj
