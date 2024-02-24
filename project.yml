@@ -8,3 +8,5 @@ targets:
       proprties:
         version: 1.0
     sources: [App.swift]
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.example.app
