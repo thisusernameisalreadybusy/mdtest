@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: swift --version
       - run: which swiftc
-      - run: cmake -GXcode -S . -B build -DCMAKE_SYSTEM_NAME=iOS
+      - run: cmake -GXcode -S . -B build
       - uses: actions/upload-artifact@v4
         with:
           path: ./*.xcodeproj
