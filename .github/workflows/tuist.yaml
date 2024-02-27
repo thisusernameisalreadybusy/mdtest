@@ -7,5 +7,5 @@ jobs:
     runs-on: macos-latest
     steps:
         - uses: jdx/mise-action@v2
-        - run: mise x tuist -- "init --platform ios --template swiftui"
+        - run: mise x tuist init
         - run: ls -l; tree
