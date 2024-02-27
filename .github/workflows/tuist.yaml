@@ -1,0 +1,11 @@
+name: Tuist
+on:
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: macos-latest
+    steps:
+        - uses: jsx/mise-actions@v2
+        - run: tuist init --platform ios --template swiftui
+        - run: ls -l; tree
