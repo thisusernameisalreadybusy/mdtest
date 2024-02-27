@@ -7,5 +7,6 @@ jobs:
     runs-on: macos-latest
     steps:
         - uses: jdx/mise-action@v2
-        - run: mise x tuist@4.3.4 -- tuist init
+        - run: mise x tuist@4.3.4 -- tuist help init
+        - run: mise x tuist@4.3.4 -- tuist help scaffold
         - run: find .
