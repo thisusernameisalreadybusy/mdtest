@@ -8,5 +8,13 @@ jobs:
     steps:
         - uses: jdx/mise-action@v2
         - run: mise x tuist@4.3.4 -- tuist help init
-        - run: mise x tuist@4.3.4 -- tuist help scaffold
+        - run: mise x tuist@4.3.4 -- tuist scaffold list
         - run: find .
+        - uses: actions/upload-artifact@v4
+          with:
+            path: .
+        - run: mise x tuist@4.3.4 -- tuist scaffold swiftui
+        - uses: actions/upload-artifact@v4
+          with:
+            path: .
+            name: eshkere
