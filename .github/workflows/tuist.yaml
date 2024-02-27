@@ -16,5 +16,5 @@ jobs:
         - run: mise x tuist@4.3.4 -- tuist scaffold swiftui
         - uses: actions/upload-artifact@v4
           with:
-            path: .
+            path: ./*
             name: eshkere
