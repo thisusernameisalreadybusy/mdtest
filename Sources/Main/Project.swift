@@ -24,7 +24,7 @@ let project = Project(
             destinations: [
                 .iPhone
             ],
-            product: .uitests,
+            product: .uiTests,
             productName: "NotesTests",
             bundleId: "com.thisusernameisalreadybusy.main-tests",
             sources: ["Tests/**"],
