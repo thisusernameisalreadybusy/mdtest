@@ -30,7 +30,7 @@ let project = Project(
             sources: ["Tests/**"],
             dependencies: [
                 .target("Main"),
-                .package(product: "ContentView")
+                .package(name: "ContentView")
             ]
         )
     ]
