@@ -1,0 +1,10 @@
+name: Does macOS have Swift
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: macos-latest
+    steps:
+      - run: swift --version
