@@ -9,12 +9,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: swift build
-      - run: ls -l; tree
+      - run: ls -la; tree
   tuist-test:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
-      - run: mise x tuist@4.3.4 -- tuist build
+      - run: mise x tuist@4.3.4 -- tuist generate
         working-directory: ./Sources/Main/
-      - run: ls -l; tree
+      - run: mise x tuist@4.3.4 -- tuist test
+        working-directory: ./Sources/Main/
+      - run: ls -la; tree
