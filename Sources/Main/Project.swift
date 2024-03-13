@@ -14,7 +14,10 @@ let project = Project(
             product: .app,
             productName: "Notes",
             bundleId: "com.thisusernameisalreadybusy.main",
-            sources: ["Sources/**"]
+            sources: ["Sources/**"],
+            dependencies: [
+                .package(product: "ContentView")
+            ]
         )
     ]
 )

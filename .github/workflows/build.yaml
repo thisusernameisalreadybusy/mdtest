@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: swift build
+      - run: ls -l; tree
   tuist-test:
     runs-on: macos-latest
     steps:
@@ -16,3 +17,4 @@ jobs:
       - uses: jdx/mise-action@v2
       - run: mise x tuist@4.3.4 -- tuist build
         working-directory: ./Sources/Main/
+      - run: ls -l; tree
