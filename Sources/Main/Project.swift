@@ -18,6 +18,20 @@ let project = Project(
             dependencies: [
                 .package(product: "ContentView")
             ]
+        ),
+        .target(
+            name: "Main",
+            destinations: [
+                .iPhone
+            ],
+            product: .uitests,
+            productName: "NotesTests",
+            bundleId: "com.thisusernameisalreadybusy.main-tests",
+            sources: ["Tests/**"],
+            dependencies: [
+                .target("Main").
+                .package(product: "ContentView")
+            ]
         )
     ]
 )
