@@ -20,7 +20,7 @@ let project = Project(
             ]
         ),
         .target(
-            name: "Main",
+            name: "MainTests",
             destinations: [
                 .iPhone
             ],
@@ -29,8 +29,7 @@ let project = Project(
             bundleId: "com.thisusernameisalreadybusy.main-tests",
             sources: ["Tests/**"],
             dependencies: [
-                .target("Main"),
-                .package(name: "ContentView")
+                .target("Main")
             ]
         )
     ]
