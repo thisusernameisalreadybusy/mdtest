@@ -29,7 +29,7 @@ let project = Project(
             bundleId: "com.thisusernameisalreadybusy.main-tests",
             sources: ["Tests/**"],
             dependencies: [
-                .target("Main").
+                .target("Main"),
                 .package(product: "ContentView")
             ]
         )
