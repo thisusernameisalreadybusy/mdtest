@@ -14,5 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
+      - run: mise x tuist@4.3.4 -- tuist install
       - run: mise x tuist@4.3.4 -- tuist build
         working-directory: ./Sources/Main/
