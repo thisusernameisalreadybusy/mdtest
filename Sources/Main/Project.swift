@@ -2,9 +2,9 @@ import ProjectDescription
 
 let project = Project(
     name: "Main",
-    packages: [
-        .package(path: "../../")
-    ],
+    //packages: [
+    //    .package(path: "../../")
+    //],
     targets: [
         .target(
             name: "Main",
