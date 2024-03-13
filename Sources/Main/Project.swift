@@ -2,9 +2,9 @@ import ProjectDescription
 
 let project = Project(
     name: "Main",
-    //packages: [
-    //    .package(path: "../../")
-    //],
+    packages: [
+        .package(path: "../../")
+    ],
     targets: [
         .target(
             name: "Main",
@@ -14,10 +14,7 @@ let project = Project(
             product: .app,
             productName: "Notes",
             bundleId: "com.thisusernameisalreadybusy.main",
-            sources: ["Sources/**"],
-            dependencies: [
-                .external(name: "ContentView")
-            ]
+            sources: ["Sources/**"]
         )
     ]
 )

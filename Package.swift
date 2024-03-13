@@ -14,9 +14,6 @@ let package = Package(
             ]
         )
     ],
-    dependencies: [
-        .package(name: "content-view", path: ".")
-    ],
     targets: [
         .target(
             name: "ContentView",
