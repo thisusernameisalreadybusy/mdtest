@@ -16,7 +16,7 @@ let project = Project(
             bundleId: "com.thisusernameisalreadybusy.main",
             sources: ["Sources/**"],
             dependencies: [
-                .external(name: "ContentView")
+                .package(product: "ContentView")
             ]
         )
     ]
