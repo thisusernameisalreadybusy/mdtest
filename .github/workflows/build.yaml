@@ -1,0 +1,17 @@
+name: Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  swift-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test
+  tuist-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - run: mise x tuist@4.3.4 -- tuist build

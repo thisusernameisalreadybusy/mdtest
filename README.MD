@@ -1,3 +1,2 @@
-установка пакетов: npm install 
+# iOS Development
 
-команды для запуска: npm start
