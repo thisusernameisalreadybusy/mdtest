@@ -8,7 +8,9 @@ let project = Project(
     targets: [
         .target(
             name: "Main",
-            destinations: .iPhone,
+            destinations: [
+                .iPhone
+            ],
             product: .app,
             productName: "Notes",
             bundleId: "com.thisusernameisalreadybusy.main",

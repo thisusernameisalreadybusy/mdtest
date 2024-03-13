@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "content-view",
     platforms: [
-        .iOS(.v17)
+        .iOS("17.0")
     ],
     products: [
         .library(
