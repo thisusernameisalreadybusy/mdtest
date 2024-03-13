@@ -3,7 +3,7 @@ import ProjectDescription
 let project = Project(
     name: "Main",
     packages: [
-        .package(path: "../ContentView")
+        .package(path: "../")
     ],
     targets: [
         .target(
