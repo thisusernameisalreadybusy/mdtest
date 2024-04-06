@@ -6,4 +6,4 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ env.VARIABLE_FROM_REPO }}
+      - run: echo ${{ vars.VARIABLE_FROM_REPO }}
