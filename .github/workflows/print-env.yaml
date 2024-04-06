@@ -1,0 +1,9 @@
+name: Print ENV
+on:
+  workflow_dispatch:
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo $VARIABLE_FROM_REPO
