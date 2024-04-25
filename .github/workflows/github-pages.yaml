@@ -1,4 +1,5 @@
-name: Print ENV
+name: GitHub Pages
+
 on:
   workflow_dispatch:
 
@@ -11,3 +12,6 @@ jobs:
         id: deployment
         with:
           preview: true
+    permissions:
+      id-token: write
+      pages: write
