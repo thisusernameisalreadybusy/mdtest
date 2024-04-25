@@ -1,0 +1,13 @@
+name: Print ENV
+on:
+  workflow_dispatch:
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ steps.deployment.outputs.page_url }}
+      - uses: actions/deploy-pages@v4
+        id: deployment
+        with:
+          preview: true
